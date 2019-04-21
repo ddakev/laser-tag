@@ -1,0 +1,37 @@
+.endedView {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.endedView table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.endedView table thead th {
+  background: rgb(230, 230, 230);
+  padding: 15px 20px;
+}
+
+.endedView table tbody td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.endedView button {
+  border: none;
+  background: rgb(100, 100, 100);
+  border-radius: 3px;
+  padding: 10px 15px;
+  color: white;
+  margin-top: 50px;
+  font-size: 12pt;
+}
+
+.endedView button:hover {
+  background: rgb(130, 130, 130);
+  cursor: pointer;
+}
