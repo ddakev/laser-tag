@@ -30,7 +30,7 @@ class RunningView extends Component {
                   <td>{player.kills}</td>
                   <td>{player.deaths}</td>
                   <td>{player.deaths === 0 ? (player.kills > 0 ? "Infinity" : 0) : Math.round(100 * player.kills / player.deaths) / 100}</td>
-                  <td>{player.shots === 0 ? "0%" : Math.round(100 * player.kills / player.shots) / 100 + "%"}</td>
+                  <td>{player.shots === 0 ? "0%" : Math.round(1000 * player.kills / player.shots) / 10 + "%"}</td>
                   <td>{player.score}</td>
                 </tr>
               );

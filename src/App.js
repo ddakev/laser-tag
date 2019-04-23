@@ -55,14 +55,14 @@ class App extends Component {
   }
   
   initiateGame() {
-    this.state.socket.emit('start game', {duration: 20});
+    this.state.socket.emit('start game', {duration: 300});
     this.setState({gameMode: GameMode.STARTING});
   }
   
   startGame() {
     this.setState({
       gameMode: GameMode.RUNNING,
-      remainingTime: 20
+      remainingTime: 300
     });
     
     const countdown = setInterval(() => {
